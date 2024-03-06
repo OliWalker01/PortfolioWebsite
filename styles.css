@@ -85,3 +85,32 @@ p {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+input[type="text"], select, textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+.cm-form {
+    padding-left: 550px;
+    padding-right: 550px;
+}
+
+input[type="submit"] {
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
