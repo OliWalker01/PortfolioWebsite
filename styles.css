@@ -66,6 +66,8 @@ p {
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .socialmediabar ul {
