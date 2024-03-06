@@ -1,0 +1,16 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: #808080;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
