@@ -102,8 +102,8 @@ label {
 }
 
 .cm-form {
-    padding-left: 550px;
-    padding-right: 550px;
+    margin: 0;
+    left: 50%
 }
 
 input[type="submit"] {
