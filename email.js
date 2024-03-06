@@ -10,7 +10,7 @@ function sendEmail() {
     const bodyMessage = `Full Name: ${firstName.value} ${secondName.value}<br> Company Name: ${companyName.value}<br> Phone Number: ${phoneNumber.value}<br> Email: ${emailAddress.value}<br> Subject: ${querySubject.value}<br>`;
 
     // Corrected variable names and null checks
-    if (!firstName.value.trim() || !secondName.value.trim() || !companyName.value.trim() || !phoneNumber.value.trim() || !emailAddress.value.trim() || !querySubject.value.trim()) {
+    if (!firstName.value.trim() || !secondName.value.trim() || !phoneNumber.value.trim() || !emailAddress.value.trim() || !querySubject.value.trim()) {
         alert("Error! Cannot Send Message, information is missing!");
         return; // Exit the function if validation fails
     }

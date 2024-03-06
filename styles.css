@@ -94,7 +94,6 @@ input[type="text"], select, textarea {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     margin-top: 10px;
-    margin-bottom: 35px;
 }
 
 label {
@@ -127,4 +126,12 @@ label {
 
 .button:hover{
     background-color: grey;
+}
+
+.warning-text{
+    font-size: 15px;
+    color: red;
+    padding-left: 0px;
+    margin-bottom: 35px;
+    margin-top: 5px;
 }
