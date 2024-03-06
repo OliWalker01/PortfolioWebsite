@@ -12,13 +12,14 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     padding-left: 25px;
 }
 
 p {
-    text-align: left;
+    text-align: justify;
     font-size: 20px;
-    padding-left: 25px;
+    padding-left: 65px;
 }
 
 .navbar ul {
@@ -47,4 +48,38 @@ p {
 
 .navbar li {
     float: left;
+}
+
+.grid-container {
+    display: grid;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+.grid-item {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.socialmediabar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+.socialmediabar li {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
 }
