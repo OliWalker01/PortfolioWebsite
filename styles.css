@@ -84,6 +84,7 @@ p {
     float: left;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 50px;
 }
 
 input[type="text"], select, textarea {
@@ -106,11 +107,24 @@ label {
     padding-right: 20%;
 }
 
-input[type="submit"] {
+.submitbutton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
     font-family: "Open Sans", sans-serif;
     font-size: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 35px;
     padding-right: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: grey;
 }
