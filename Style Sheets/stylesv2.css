@@ -3,7 +3,6 @@ body{
     font-weight: 400;
     font-style: normal;
     color: white;
-    background-color: black;
     width: 100%;
 }
 
@@ -17,18 +16,30 @@ body{
 .css-typing h1 {
     border-right: .15em solid orange;
     white-space: nowrap;
-    font-size: 29px;
+    font-size: 28px;
     overflow: hidden;
     padding-top: 2px;
   }
 
-  .css-typing h1:nth-child(1) {
+  p {
+    font-size: 22px;
+  }
+
+.background {
+  background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
+
+.css-typing h1:nth-child(1) {
     width: 8.7em;
     -webkit-animation: type2 2s steps(6, end);
     animation: type2 2s steps(40, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-  }
+}
   
   @keyframes type {
     0% {
@@ -109,7 +120,6 @@ body{
     display: flex;
     justify-content: right;
     list-style-type: none;
-    background-color: black;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -117,7 +127,7 @@ body{
 }
 
 .navbar a {
-    color: rgb(170, 163, 163);
+    color: white;
     text-decoration: none;
     padding: 15px;
     display: block;
@@ -125,7 +135,7 @@ body{
 }
 
 .navbar a:hover {
-    color: white;
+    color: #ff99cc;
 }
 
 .navbar li {
