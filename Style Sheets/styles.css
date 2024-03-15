@@ -68,6 +68,7 @@ p {
     hyphens: auto;
     display: flex;
     justify-content: center;
+    padding-left: 25px;
 }
 
 .socialmediabar ul {

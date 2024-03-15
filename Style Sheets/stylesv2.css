@@ -1,0 +1,136 @@
+body{
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.css-typing h1 {
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 29px;
+    overflow: hidden;
+    padding-top: 2px;
+  }
+
+  .css-typing h1:nth-child(1) {
+    width: 8.7em;
+    -webkit-animation: type2 2s steps(6, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+@-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+}
+  
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+@-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+}
+
+.socialmediabar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+.socialmediabar li {
+    float: left;
+    display: block;
+    padding-left: 45px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+.logo-image{
+    height: 64px;
+    width: 64px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    padding-right: 2.5%;
+}
+
+.navbar a {
+    color: rgb(170, 163, 163);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar li {
+    float: left;
+    padding-left: 2%;
+    font-size: 20px;
+    font-weight: bold;
+}
