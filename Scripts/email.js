@@ -13,7 +13,7 @@ function sendEmail() {
 
     // Corrected variable names and null checks
     if (!firstName.value.trim() || !secondName.value.trim() || !phoneNumber.value.trim() || !emailAddress.value.trim() || !querySubject.value.trim()) {
-        //alert("Error! Cannot Send Message, information is missing!");
+        alert("Error! Cannot Send Message, information is missing!");
         return; // Exit the function if validation fails
     }
 
