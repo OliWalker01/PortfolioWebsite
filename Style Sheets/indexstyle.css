@@ -1,5 +1,13 @@
+.css-typing h1 {
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  font-size: 28px;
+  overflow: hidden;
+  padding-top: 2px;
+}
+
 .css-typing h1:nth-child(1) {
-    width: 8.7em;
+    width: 9.9em;
     -webkit-animation: type2 2s steps(6, end);
     animation: type2 2s steps(40, end);
     -webkit-animation-fill-mode: forwards;

@@ -13,15 +13,7 @@ body{
     transform: translate(-50%, -50%);
   }
 
-.css-typing h1 {
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    font-size: 28px;
-    overflow: hidden;
-    padding-top: 2px;
-  }
-
-  p {
+p {
     font-size: 22px;
   }
 
