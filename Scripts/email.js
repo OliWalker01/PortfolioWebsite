@@ -34,7 +34,7 @@ function sendEmail() {
         Subject : "Contact has been made",
         Body : bodyMessage
     }).then(
-        location.replace("contactmesuccess.html")
+        alert("Message Sent Successfully!")
     ).catch(
         error => alert("Failed to send message: " + error.message)
     );
