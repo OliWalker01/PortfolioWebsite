@@ -28,20 +28,17 @@ function sendEmail() {
     }
 
     Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "noreply.oliverwalkerportfolio@gmail.com",
-        Password: "0DD2E5CC277991C5A26B72C1EF54E8ED14AA",
-        To: 'oliver.walker01@hotmail.co.uk',
-        From: "noreply.oliverwalkerportfolio@gmail.com", 
-        Body: bodyMessage
+        SecureToken: "d5d0e33a-1faa-4ee8-8103-9d7bbed1144d",
+        To : 'oliver.walker01@hotmail.co.uk',
+        From : "info@oliverwalkerportfolio.co.uk",
+        Subject : "Contact has been made",
+        Body : bodyMessage
     }).then(
-        message => alert("Message Sent Successfully")
+        location.replace("contactmesuccess.html")
     ).catch(
         error => alert("Failed to send message: " + error.message)
     );
-
-    location.replace("contactmesuccess.html")
-}
+}\
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();

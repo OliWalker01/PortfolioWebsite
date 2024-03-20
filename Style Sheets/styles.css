@@ -4,6 +4,8 @@ body{
     font-style: normal;
     color: white;
     width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .center {
@@ -35,17 +37,12 @@ p {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin: 0px;
     overflow: hidden;
     padding-left: 0px;
     padding-top: 50px;
 }
 
 .socialmediabar li {
-    float: left;
-    display: block;
-    padding-left: 45px;
-    padding-right: 15px;
     padding-bottom: 50px;
 }
 

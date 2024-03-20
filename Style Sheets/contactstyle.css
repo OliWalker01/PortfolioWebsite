@@ -13,8 +13,8 @@ label {
 }
 
 .cm-form {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 .submitbutton-container {
@@ -30,13 +30,13 @@ label {
     padding-bottom: 5px;
     padding-left: 35px;
     padding-right: 35px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 10px;
 }
 
 .button:hover{
-    background-color: grey;
+    background-color: rgb(196, 188, 188);
 }
 
 .warning-text{
