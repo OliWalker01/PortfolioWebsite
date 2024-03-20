@@ -1,74 +1,36 @@
 body{
-    font-family: "Open Sans", sans-serif;
-    margin: 0px;
-    background-color: white;
-    color: black;
-}
-
-h1 {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-h2 {
-    text-align: center;
-    padding-left: 25px;
-}
-
-p {
-    text-align: justify;
-    font-size: 20px;
-    padding-left: 65px;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    background-color: black;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    padding-left: 15px;
-}
-
-
-.navbar a {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
     color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+    width: 100%;
 }
 
-.navbar a:hover {
-    background-color: grey;
-}
-
-.navbar li {
-    float: left;
-}
-
-.grid-container {
-    display: grid;
-    display: flex;
-    justify-content: center;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-.grid-item {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
-    display: flex;
-    justify-content: center;
-    padding-left: 25px;
+.css-typing h1 {
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 28px;
+    overflow: hidden;
+    padding-top: 2px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+.background {
+  background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
 }
 
 .socialmediabar ul {
@@ -83,56 +45,42 @@ p {
 
 .socialmediabar li {
     float: left;
-    padding-left: 15px;
+    display: block;
+    padding-left: 45px;
     padding-right: 15px;
     padding-bottom: 50px;
 }
 
-input[type="text"], select, textarea {
-    width: 100%;
-    resize: vertical;
-    padding: 15px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    margin-top: 10px;
+.logo-image{
+    height: 64px;
+    width: 64px;
 }
 
-label {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-}
-
-.cm-form {
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.submitbutton-container {
+.navbar ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    padding-right: 2.5%;
 }
 
-.button{
-    font-family: "Open Sans", sans-serif;
-    font-size: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 35px;
-    padding-right: 35px;
-    background-color: black;
+.navbar a {
     color: white;
-    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
 }
 
-.button:hover{
-    background-color: grey;
+.navbar a:hover {
+    color: #ff99cc;
 }
 
-.warning-text{
-    font-size: 15px;
-    color: red;
-    padding-left: 0px;
-    margin-bottom: 35px;
-    margin-top: 5px;
+.navbar li {
+    float: left;
+    padding-left: 2%;
+    font-size: 20px;
+    font-weight: bold;
 }
