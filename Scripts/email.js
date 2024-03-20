@@ -13,17 +13,17 @@ function sendEmail() {
 
     // Corrected variable names and null checks
     if (!firstName.value.trim() || !secondName.value.trim() || !phoneNumber.value.trim() || !emailAddress.value.trim() || !querySubject.value.trim()) {
-        alert("Error! Cannot Send Message, information is missing!");
+        //alert("Error! Cannot Send Message, information is missing!");
         return; // Exit the function if validation fails
     }
 
     if (!emailAddress.value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
-        alert("Error! Cannot Send Message, email is invalid!")
+        //alert("Error! Cannot Send Message, email is invalid!")
         return;
     }
 
     if (!phoneNumber.value.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im)) {
-        alert("Error!, Cannot Send Message, phone number is invalid!")
+        //alert("Error!, Cannot Send Message, phone number is invalid!")
         return;
     }
 
@@ -34,14 +34,21 @@ function sendEmail() {
         Subject : "Contact has been made",
         Body : bodyMessage
     }).then(
-        message => alert("Message Sent Successfully"),
+        //message => alert("Message Sent Successfully"),
     ).catch(
-        error => alert("Failed to send message: " + error.message)
+        //error => alert("Failed to send message: " + error.message)
     );
+}
+
+function printMessage()
+{
+    alert("Button Clicked")
 }
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    
+
+    printMessage();
+
     sendEmail();
 });
