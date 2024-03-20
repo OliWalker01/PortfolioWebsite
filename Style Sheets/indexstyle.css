@@ -1,3 +1,7 @@
+.index-text {
+  text-align: left;
+}
+
 .css-typing h1 {
   border-right: .15em solid orange;
   white-space: nowrap;
