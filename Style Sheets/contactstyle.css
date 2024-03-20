@@ -1,0 +1,48 @@
+input[type="text"], select, textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+.cm-form {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.submitbutton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: grey;
+}
+
+.warning-text{
+    font-size: 15px;
+    color: red;
+    padding-left: 0px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+}
