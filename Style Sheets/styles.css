@@ -28,7 +28,7 @@ p {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
-  margin: 0;
+  left: 50%;
 }
 
 .socialmediabar ul {
