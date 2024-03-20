@@ -34,11 +34,11 @@ function sendEmail() {
         Subject : "Contact has been made",
         Body : bodyMessage
     }).then(
-        alert("Message Sent Successfully!")
+        message => alert("Message Sent Successfully"),
     ).catch(
         error => alert("Failed to send message: " + error.message)
     );
-}\
+}
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
