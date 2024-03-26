@@ -67,7 +67,7 @@
 }
 
 .spotify-container {
-  position: fixed;
-  bottom: 1.5%;
-  left: 1%;
+  position: absolute;
+  top: 100%;
+  transform: translate(5%, -107%);
 }
