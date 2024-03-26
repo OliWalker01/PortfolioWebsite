@@ -36,14 +36,16 @@ function sendEmail() {
     }).then(
         message => alert("Message Sent Successfully"),
     ).catch(
-        error => alert("Failed to send message: " + error.message)
+        error => alert("Failed to send message: " + error.message),
     );
+
+    openConfirmedPage();
 }
 
-/*function printMessage()
+function printMessage()
 {
     alert("Button Clicked")
-}*/
+}
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -52,3 +54,7 @@ form.addEventListener("submit", (e) => {
 
     sendEmail();
 });
+
+function openConfirmedPage() {
+    window.location='contactmesuccess.html';
+}
