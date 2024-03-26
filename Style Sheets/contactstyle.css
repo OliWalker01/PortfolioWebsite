@@ -24,6 +24,12 @@ label {
     align-items: center;
 }
 
+.homebutton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .button{
     font-family: "Open Sans", sans-serif;
     font-size: 25px;
