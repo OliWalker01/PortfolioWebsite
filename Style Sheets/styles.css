@@ -80,10 +80,6 @@ p {
     padding-left: 2.5%;
 }
 
-.navbar img {
-    height: 35px;
-}
-
 .button-navbar {
     align-items: center;
     background-color: #ff99cc;
@@ -93,7 +89,7 @@ p {
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
-    font-size: 22px;
+    font-size: 18px;
     height: 48px;
     justify-content: center;
     line-height: 24px;
