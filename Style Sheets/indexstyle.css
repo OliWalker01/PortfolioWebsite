@@ -75,3 +75,10 @@
 .index-typing {
   font-size: 25px;
 }
+
+.css-typing {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
