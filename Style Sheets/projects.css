@@ -1,5 +1,5 @@
 img {
-    height: 250px;
+    height: 225px;
     padding-bottom: 25px;
 }
 
@@ -17,7 +17,7 @@ img {
     box-sizing: border-box;
     color: #111;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     height: 350px;
     justify-content: center;
     line-height: 24px;
