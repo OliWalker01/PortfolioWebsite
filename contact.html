@@ -17,33 +17,36 @@
     </nav>
 
     <h2>Contact Me</h2>
-    <p style="text-align: center;">If you have any queries please complete the contact form below</p>
+    <p style="text-align: center; font-size: 20px;">If you have any queries please complete the contact form below</p>
 
     <div class="cm-form">
         <form action="#">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Your First Name...">
-            <p class="warning-text">First Name Required</p>
+            <p style="padding-bottom: 15px;"></p>
+            <p class="warning-text">* required field</p>
 
-            <label for="sname">Second Name:</label>
+            <label for="fname">First Name:<span class="warning-marker">*</span></label>
+            <input type="text" id="fname" name="fname" placeholder="Your First Name...">
+            <p style="padding-bottom: 15px;"></p>
+
+            <label for="sname">Second Name:<span class="warning-marker">*</span></label>
             <input type="text" id="sname" name="sname" placeholder="Your Second Name...">
-            <p class="warning-text">Second Name Required</p>
+            <p style="padding-bottom: 15px;"></p>
 
             <label for="company">Company:</label>
             <input type="text" id="company" name="company" placeholder="Company you work for...">
-            <p class="warning-text"></p>
+            <p style="padding-bottom: 15px;"></p>
 
-            <label for="pnumber">Phone Number:</label>
+            <label for="pnumber">Phone Number:<span class="warning-marker">*</span></label>
             <input type="text" id="pnumber" name="pnumber" placeholder="Your Phone Number...">
-            <p class="warning-text">Phone Number Required</p>
+            <p style="padding-bottom: 15px;"></p>
 
-            <label for="email">Email Address:</label>
+            <label for="email">Email Address:<span class="warning-marker">*</span></label>
             <input type="text" id="email" name="email" placeholder="Your Email Address...">
-            <p class="warning-text">Email Address Required</p>
+            <p style="padding-bottom: 15px;"></p>
 
-            <label for="subject">Subject:</label>
+            <label for="subject">Subject:<span class="warning-marker">*</span></label>
             <textarea id="subject" name="subject" placeholder="Write something..." style="height: 200px"></textarea>
-            <p class="warning-text">Subject Required</p>
+            <p style="padding-bottom: 15px;"></p>
 
             <div class="submitbutton-container">
                 <button class="button-56" type="submit">Confirm</button>
