@@ -1,3 +1,9 @@
+.spotify-container {
+  position: absolute;
+  top: 100%;
+  transform: translate(5%, -107%);
+}
+
 .css-typing h1 {
   border-right: .15em solid orange;
   white-space: nowrap;
@@ -64,10 +70,4 @@
     50% {
       border-color: tranparent;
     }
-}
-
-.spotify-container {
-  position: absolute;
-  top: 100%;
-  transform: translate(5%, -107%);
 }
