@@ -65,3 +65,9 @@
       border-color: tranparent;
     }
 }
+
+.spotify-container {
+  position: fixed;
+  bottom: 1.5%;
+  left: 1%;
+}
