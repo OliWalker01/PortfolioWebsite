@@ -2,13 +2,13 @@ input[type="text"], select, textarea {
   width: 100%;
   resize: vertical;
   padding: 15px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Share Tech Mono", monospace;
   font-size: 15px;
   margin-top: 10px;
 }
 
 label {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Share Tech Mono", monospace;
   font-size: 20px;
   display: flex;
 }
