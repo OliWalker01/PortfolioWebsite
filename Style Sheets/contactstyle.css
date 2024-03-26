@@ -9,6 +9,7 @@ input[type="text"], select, textarea {
 
 label {
     font-family: "Open Sans", sans-serif;
+    padding-top: 5px;
     font-size: 20px;
 }
 
