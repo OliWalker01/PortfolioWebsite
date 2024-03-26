@@ -201,3 +201,11 @@ a {
       padding: 0 40px;
     }
 }
+
+video {
+    width: 35%;
+    height: 20%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
