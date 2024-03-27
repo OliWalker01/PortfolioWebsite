@@ -14,15 +14,15 @@ label {
 }
 
 .cm-form {
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .warning-marker {
 color: red; 
 padding-left: 0.5%;
 padding-right: 0.5%;
-font-size: 25px;
+font-size: 20px;
 }
 
 .warning-text {
