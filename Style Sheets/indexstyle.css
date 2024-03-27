@@ -133,7 +133,7 @@
 
 .currentprojects-header{
   padding-top: 15px;
-  font-size: 24px;
+  font-size: 20px;
   word-wrap: break-word;
   text-align: left;
   padding-bottom: 0;
@@ -142,7 +142,7 @@
 }
 
 .currentprojects-text{
-  font-size: 20px;
+  font-size: 16px;
   word-wrap: break-word;
   padding-top: 0px;
   text-align: left;
