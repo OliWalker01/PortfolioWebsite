@@ -65,11 +65,7 @@ p {
 
 a {
     text-decoration: none;
-    display: block;
-    text-align: center;
     color: white;
-
-    font-weight: light;
 }
 
 .navbar li {
@@ -99,6 +95,8 @@ a {
     -webkit-user-select: none;
     touch-action: manipulation;
     font-family: "Share Tech Mono", monospace;
+    display: block;
+    text-align: center;
   }
   
 .button-navbar:after {
