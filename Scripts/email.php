@@ -29,10 +29,9 @@ try {
     $mail->SMTPAuth   = true;
     $mail->Username   = trim($_ENV['ZOHO_EMAIL']);
     $mail->Password   = trim($_ENV['ZOHO_PASSWORD']);
-    $mail->SMTPSecure = trim($_ENV['SMTP_SECURE']); // ssl or tls
+    $mail->SMTPSecure = trim($_ENV['SMTP_SECURE']);
     $mail->Port       = (int)$_ENV['SMTP_PORT'];
 
-    // Optional: disable certificate verification if needed
     $mail->SMTPOptions = [
         'ssl' => [
             'verify_peer'       => true,
@@ -57,7 +56,11 @@ try {
     $mail->AltBody = "Name: $fname $sname\nCompany: $company\nPhone: $pnumber\nEmail: $email\nMessage: $subject";
 
     $mail->send();
-    echo 'Message sent successfully!';
+
+    // Redirect on success
+    header('Location: contactmesuccess.html');
+    exit;
+
 } catch (Exception $e) {
     echo "Mailer Error: {$mail->ErrorInfo}";
 }
