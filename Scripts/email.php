@@ -7,10 +7,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dotenv\Dotenv;
 
-require 'vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-// Load .env
-$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
 // Get form data safely
@@ -32,7 +31,7 @@ try {
     $mail->SMTPSecure = $_ENV['SMTP_SECURE'];
     $mail->Port       = $_ENV['SMTP_PORT'];
 
-    $mail->setFrom($Username);
+    $mail->setFrom($_ENV['ZOHO_EMAIL'], "Website Contact Form");
     $mail->addAddress($_ENV['TO_EMAIL']);
     $mail->addReplyTo($email, "$fname $sname");
 
