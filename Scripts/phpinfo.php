@@ -14,13 +14,22 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.zoho.com';
     $mail->SMTPAuth   = true;
-    $mail->Username = trim($_ENV['ZOHO_EMAIL']);
-    $mail->Password = trim($_ENV['ZOHO_PASSWORD']);
-    $mail->SMTPSecure = 'tls';
-    $mail->Port       = 587;
+    $mail->AuthType   = 'LOGIN';
+    $mail->Username   = trim($_ENV['ZOHO_EMAIL']);
+    $mail->Password   = trim($_ENV['ZOHO_PASSWORD']);
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port       = 465;
 
-    $mail->setFrom($_ENV['ZOHO_EMAIL'], 'Test');
-    $mail->addAddress($_ENV['TO_EMAIL']);
+    $mail->SMTPOptions = [
+        'ssl' => [
+            'verify_peer'       => false,
+            'verify_peer_name'  => false,
+            'allow_self_signed' => true,
+        ],
+    ];
+
+    $mail->setFrom(trim($_ENV['ZOHO_EMAIL']), 'Test');
+    $mail->addAddress(trim($_ENV['TO_EMAIL']));
     $mail->Subject = 'SMTP Test';
     $mail->Body = 'Testing Zoho SMTP.';
 
