@@ -7,8 +7,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dotenv\Dotenv;
 
-require __DIR__ . 'vendor/autoload.php';
+// Correct path to vendor
+require __DIR__ . '/vendor/autoload.php';
 
+// Load .env from same folder
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
