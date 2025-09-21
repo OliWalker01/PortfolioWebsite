@@ -40,7 +40,7 @@ try {
         ],
     ];
 
-    $mail->setFrom(trim($_ENV['ZOHO_EMAIL']), 'Website Contact Form');
+    $mail->setFrom(trim($_ENV['ZOHO_EMAIL']), 'Portfolio Contact Form');
     $mail->addAddress(trim($_ENV['TO_EMAIL']));
     $mail->addReplyTo($email, "$fname $sname");
 
@@ -58,6 +58,7 @@ try {
 
     // Second email to the user (confirmation)
     $mail->clearAddresses();
+    $mail->setFrom(trim($_ENV['ZOHO_EMAIL']), 'Oliver Walker Contact Form');
     $mail->addAddress($email);
     $mail->Subject = "Thank you for reaching out!";
     $mail->Body    = "<h3>Contact Form Submission Confirmation</h3>
