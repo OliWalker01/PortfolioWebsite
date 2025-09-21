@@ -20,37 +20,30 @@
     <p style="text-align: center; font-size: 20px;">If you have any queries please complete the contact form below</p>
 
     <div class="cm-form">
-        <form action="#">
-            <p style="padding-bottom: 15px;"></p>
+        <form action="send_email.php" method="post">
             <p class="warning-text">* required field</p>
 
             <label for="fname">First Name:<span class="warning-marker">*</span></label>
-            <input type="text" id="fname" name="fname" placeholder="Your First Name...">
-            <p style="padding-bottom: 15px;"></p>
+            <input type="text" id="fname" name="fname" placeholder="Your First Name..." required>
 
             <label for="sname">Second Name:<span class="warning-marker">*</span></label>
-            <input type="text" id="sname" name="sname" placeholder="Your Second Name...">
-            <p style="padding-bottom: 15px;"></p>
+            <input type="text" id="sname" name="sname" placeholder="Your Second Name..." required>
 
             <label for="company">Company:</label>
             <input type="text" id="company" name="company" placeholder="Company you work for...">
-            <p style="padding-bottom: 15px;"></p>
 
             <label for="pnumber">Phone Number:<span class="warning-marker">*</span></label>
-            <input type="text" id="pnumber" name="pnumber" placeholder="Your Phone Number...">
-            <p style="padding-bottom: 15px;"></p>
+            <input type="text" id="pnumber" name="pnumber" placeholder="Your Phone Number..." required>
 
             <label for="email">Email Address:<span class="warning-marker">*</span></label>
-            <input type="text" id="email" name="email" placeholder="Your Email Address...">
-            <p style="padding-bottom: 15px;"></p>
+            <input type="email" id="email" name="email" placeholder="Your Email Address..." required>
 
             <label for="subject">Subject:<span class="warning-marker">*</span></label>
-            <textarea id="subject" name="subject" placeholder="Write something..." style="height: 200px"></textarea>
-            <p style="padding-bottom: 15px;"></p>
+            <textarea id="subject" name="subject" placeholder="Write something..." style="height: 200px" required></textarea>
 
             <div class="generalbutton-container">
                 <button class="button-general" type="submit">Confirm</button>
-            </div>  
+            </div>
         </form>
     </div>
     
