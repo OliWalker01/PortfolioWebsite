@@ -9,16 +9,16 @@ $dotenv->load();
 
 $mail = new PHPMailer(true);
 try {
-    $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;               // Debug output
     $mail->Debugoutput = 'html';
     $mail->isSMTP();
-    $mail->Host       = 'smtp.zoho.com';
+    $mail->Host       = trim($_ENV['SMTP_HOST']);
     $mail->SMTPAuth   = true;
     $mail->AuthType   = 'LOGIN';
     $mail->Username   = trim($_ENV['ZOHO_EMAIL']);
     $mail->Password   = trim($_ENV['ZOHO_PASSWORD']);
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
+    $mail->SMTPSecure = trim($_ENV['SMTP_SECURE']); // ssl or tls
+    $mail->Port       = (int)$_ENV['SMTP_PORT'];
 
     $mail->SMTPOptions = [
         'ssl' => [
