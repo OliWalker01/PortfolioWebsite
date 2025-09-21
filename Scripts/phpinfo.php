@@ -12,12 +12,12 @@ try {
     $mail->SMTPDebug = 2;
     $mail->Debugoutput = 'html';
     $mail->isSMTP();
-    $mail->Host = $_ENV['SMTP_HOST'];
-    $mail->SMTPAuth = true;
-    $mail->Username = $_ENV['ZOHO_EMAIL'];
-    $mail->Password = $_ENV['ZOHO_PASSWORD'];
-    $mail->SMTPSecure = $_ENV['SMTP_SECURE'];
-    $mail->Port = (int)$_ENV['SMTP_PORT'];
+    $mail->Host       = 'smtp.zoho.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'info@oliverwalkerportfolio.co.uk';  // Full email
+    $mail->Password   = 'pxPh1AJ6ezv7';
+    $mail->SMTPSecure = 'ssl'; // Port 465
+    $mail->Port       = 465;
 
     $mail->setFrom($_ENV['ZOHO_EMAIL'], 'Test');
     $mail->addAddress($_ENV['TO_EMAIL']);
