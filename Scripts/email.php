@@ -58,7 +58,7 @@ try {
     $mail->send();
 
     // Redirect on success
-    header('Location: contactmesuccess.html');
+    header('Location: ../contactmesuccess.html');
     exit;
 
 } catch (Exception $e) {
