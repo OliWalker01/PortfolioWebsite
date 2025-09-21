@@ -24,6 +24,7 @@ if (!$fname || !$sname || !$pnumber || !$email || !$subject) {
 $mail = new PHPMailer(true);
 
 try {
+    // First email to yourself
     $mail->isSMTP();
     $mail->Host       = trim($_ENV['SMTP_HOST']);
     $mail->SMTPAuth   = true;
@@ -31,7 +32,6 @@ try {
     $mail->Password   = trim($_ENV['ZOHO_PASSWORD']);
     $mail->SMTPSecure = trim($_ENV['SMTP_SECURE']);
     $mail->Port       = (int)$_ENV['SMTP_PORT'];
-
     $mail->SMTPOptions = [
         'ssl' => [
             'verify_peer'       => true,
@@ -52,8 +52,19 @@ try {
                       <p><strong>Phone:</strong> $pnumber</p>
                       <p><strong>Email:</strong> $email</p>
                       <p><strong>Message:</strong><br>$subject</p>";
-
     $mail->AltBody = "Name: $fname $sname\nCompany: $company\nPhone: $pnumber\nEmail: $email\nMessage: $subject";
+
+    $mail->send();
+
+    // Second email to the user (confirmation)
+    $mail->clearAddresses();
+    $mail->addAddress($email);
+    $mail->Subject = "Thank you for reaching out!";
+    $mail->Body    = "<h3>Contact Form Submission Confirmation</h3>
+                      <p>Hi $fname!</p>
+                      <p>Thank you for reaching out! This is an email to confirm that your request has been received. I will reply as soon as possible.</p>
+                      <p>Many thanks, Oliver</p>";
+    $mail->AltBody = "Hi $fname!\n\nThank you for reaching out! This is an email to confirm that your request has been received. I will reply as soon as possible.\n\nMany thanks, Oliver";
 
     $mail->send();
 
