@@ -3,7 +3,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dotenv\Dotenv;
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 // Load .env
 $dotenv = Dotenv::createImmutable(__DIR__);
