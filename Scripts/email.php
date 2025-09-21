@@ -32,7 +32,7 @@ try {
     $mail->SMTPSecure = $_ENV['SMTP_SECURE'];
     $mail->Port       = $_ENV['SMTP_PORT'];
 
-    $mail->setFrom($email, "$fname $sname");
+    $mail->setFrom($Username);
     $mail->addAddress($_ENV['TO_EMAIL']);
     $mail->addReplyTo($email, "$fname $sname");
 
