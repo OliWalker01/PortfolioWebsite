@@ -16,8 +16,8 @@ try {
     $mail->SMTPAuth   = true;
     $mail->Username   = 'info@oliverwalkerportfolio.co.uk';  // Full email
     $mail->Password   = 'pxPh1AJ6ezv7';
-    $mail->SMTPSecure = 'ssl'; // Port 465
-    $mail->Port       = 465;
+    $mail->SMTPSecure = 'tls';
+    $mail->Port       = 587;
 
     $mail->setFrom($_ENV['ZOHO_EMAIL'], 'Test');
     $mail->addAddress($_ENV['TO_EMAIL']);
