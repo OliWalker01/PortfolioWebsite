@@ -14,8 +14,8 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.zoho.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'info@oliverwalkerportfolio.co.uk';  // Full email
-    $mail->Password   = 'pxPh1AJ6ezv7';
+    $mail->Username = trim($_ENV['ZOHO_EMAIL']);
+    $mail->Password = trim($_ENV['ZOHO_PASSWORD']);
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
 
