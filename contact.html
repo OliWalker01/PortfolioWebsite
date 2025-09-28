@@ -43,7 +43,7 @@
             <textarea id="subject" name="subject" placeholder="Write something..." style="height: 200px" required></textarea>
 
             <div class="generalbutton-container" style="padding-top: 40px;">
-                <button class="button-general" type="submit">Confirm</button>
+                <button class="button-general" type="submit" id="confirm-btn" disabled>Confirm</button>
             </div>
         </form>
     </div>
@@ -56,5 +56,25 @@
             <li><a href="https://youtube.com/@oliverwalker5934?si=fyuc8Efsux3nPn23" target="_blank" style="padding-left: 45px;"><img src="Images/YouTube Icon White.png" class="logo-image"></a></li>
         </ul>
     </nav>
+
+    <!-- ✅ Script moved to the very bottom -->
+    <script>
+        const requiredInputs = document.querySelectorAll("#fname, #sname, #pnumber, #email, #subject");
+        const confirmBtn = document.getElementById("confirm-btn");
+
+        function checkForm() {
+            let allFilled = true;
+            requiredInputs.forEach(input => {
+                if (!input.value.trim()) {
+                    allFilled = false;
+                }
+            });
+            confirmBtn.disabled = !allFilled;
+        }
+
+        requiredInputs.forEach(input => {
+            input.addEventListener("input", checkForm);
+        });
+    </script>
 </body>
 </html>

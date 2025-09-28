@@ -1,4 +1,4 @@
-body{
+body {
     @font-face { font-family: ShareTechMono-Regular; src: url('Fonts/ShareTechMono-Regular.ttf'); }
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
@@ -13,7 +13,7 @@ body{
 .center {
     display: flex;
     justify-content: center;
-  }
+}
 
 h2 {
     text-align: center;
@@ -28,11 +28,11 @@ p {
 }
 
 .background {
-  background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100%;
-  left: 50%;
+    background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    left: 50%;
 }
 
 .socialmediabar ul {
@@ -48,7 +48,7 @@ p {
     padding-bottom: 50px;
 }
 
-.logo-image{
+.logo-image {
     height: 64px;
 }
 
@@ -96,8 +96,8 @@ a {
     font-family: "Share Tech Mono", monospace;
     display: block;
     text-align: center;
-  }
-  
+}
+
 .button-navbar:after {
     background-color: #111;
     border-radius: 8px;
@@ -112,25 +112,25 @@ a {
     transition: transform .2s ease-out;
     z-index: -1;
 }
-  
+
 .button-navbar:hover:after {
     transform: translate(0, 0);
 }
-  
+
 .button-navbar:active {
     background-color: #ff99cc;
     outline: 0;
 }
-  
+
 .button-navbar:hover {
     outline: 0;
 }
-  
+
 @media (min-width: 768px) {
     .button-navbar {
-      padding: 0 40px;
+        padding: 0 40px;
     }
-  }
+}
 
 .generalbutton-container {
     display: flex;
@@ -160,6 +160,7 @@ a {
     -webkit-user-select: none;
     touch-action: manipulation;
     font-family: "Share Tech Mono", monospace;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .button-general:after {
@@ -176,23 +177,23 @@ a {
     transition: transform .2s ease-out;
     z-index: -1;
 }
-  
+
 .button-general:hover:after {
     transform: translate(0, 0);
 }
-  
+
 .button-general:active {
     background-color: #ff99cc;
     outline: 0;
 }
-  
+
 .button-general:hover {
     outline: 0;
-  }
-  
+}
+
 @media (min-width: 768px) {
     .button-general {
-      padding: 0 40px;
+        padding: 0 40px;
     }
 }
 
@@ -215,4 +216,24 @@ a {
 
 .socialmediabar {
     justify-content: center;
+}
+
+/* === Disabled button (default state) === */
+.button-general:disabled {
+    background-color: grey;
+    border: 2px solid #555;
+    color: #ddd;
+    cursor: not-allowed;
+    opacity: 0.8;
+    box-shadow: none;
+}
+
+.button-general:disabled:after {
+    background-color: transparent;
+    content: none;
+}
+
+.button-general:disabled:hover {
+    background-color: grey;
+    transform: none;
 }
