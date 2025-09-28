@@ -42,7 +42,15 @@
             <label for="subject">Subject:<span class="warning-marker">*</span></label>
             <textarea id="subject" name="subject" placeholder="Write something..." style="height: 200px" required></textarea>
 
-            <div class="generalbutton-container" style="padding-top: 40px;">
+            <!-- Google reCAPTCHA widget -->
+            <div class="g-recaptcha" 
+                 data-sitekey="6LdHvdcrAAAAAPudKkbfjpXbywjE-mgnRWmzbwAW" 
+                 data-callback="captchaPassed" 
+                 data-expired-callback="captchaExpired"
+                 style="display: flex; justify-content: center; margin: 20px 0;">
+            </div>
+
+            <div class="generalbutton-container" style="padding-top: 15px;">
                 <button class="button-general" type="submit" id="confirm-btn" disabled>Confirm</button>
             </div>
         </form>
@@ -57,10 +65,14 @@
         </ul>
     </nav>
 
-    <!-- ✅ Script moved to the very bottom -->
+    <!-- Load Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Script -->
     <script>
         const requiredInputs = document.querySelectorAll("#fname, #sname, #pnumber, #email, #subject");
         const confirmBtn = document.getElementById("confirm-btn");
+        let captchaOk = false;
 
         function checkForm() {
             let allFilled = true;
@@ -69,12 +81,24 @@
                     allFilled = false;
                 }
             });
-            confirmBtn.disabled = !allFilled;
+            confirmBtn.disabled = !(allFilled && captchaOk);
         }
 
         requiredInputs.forEach(input => {
             input.addEventListener("input", checkForm);
         });
+
+        // Called when captcha is solved
+        function captchaPassed() {
+            captchaOk = true;
+            checkForm();
+        }
+
+        // Called when captcha expires
+        function captchaExpired() {
+            captchaOk = false;
+            checkForm();
+        }
     </script>
 </body>
 </html>
