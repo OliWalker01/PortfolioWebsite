@@ -70,35 +70,40 @@
 
     <!-- Script -->
     <script>
-        const requiredInputs = document.querySelectorAll("#fname, #sname, #pnumber, #email, #subject");
-        const confirmBtn = document.getElementById("confirm-btn");
-        let captchaOk = false;
+    const requiredInputs = document.querySelectorAll("#fname, #sname, #pnumber, #email, #subject");
+    const confirmBtn = document.getElementById("confirm-btn");
+    const form = document.querySelector("form");
+    let captchaOk = false;
 
-        function checkForm() {
-            let allFilled = true;
-            requiredInputs.forEach(input => {
-                if (!input.value.trim()) {
-                    allFilled = false;
-                }
-            });
-            confirmBtn.disabled = !(allFilled && captchaOk);
-        }
-
+    function checkForm() {
+        let allFilled = true;
         requiredInputs.forEach(input => {
-            input.addEventListener("input", checkForm);
+            if (!input.value.trim()) allFilled = false;
         });
+        confirmBtn.disabled = !(allFilled && captchaOk);
+    }
 
-        // Called when captcha is solved
-        function captchaPassed() {
-            captchaOk = true;
-            checkForm();
-        }
+    requiredInputs.forEach(input => {
+        input.addEventListener("input", checkForm);
+    });
 
-        // Called when captcha expires
-        function captchaExpired() {
-            captchaOk = false;
-            checkForm();
-        }
-    </script>
+    // Called when captcha is solved
+    function captchaPassed() {
+        captchaOk = true;
+        checkForm();
+    }
+
+    // Called when captcha expires
+    function captchaExpired() {
+        captchaOk = false;
+        checkForm();
+    }
+
+    // Disable button immediately after submission
+    form.addEventListener("submit", () => {
+        confirmBtn.disabled = true;
+        confirmBtn.innerText = "Submitting..."; // optional feedback
+    });
+</script>
 </body>
 </html>
