@@ -9,7 +9,25 @@ require __DIR__ . '/vendor/autoload.php';
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// Get and sanitize form data
+// ====== 1️⃣ Verify Google reCAPTCHA ======
+$recaptcha = $_POST['g-recaptcha-response'] ?? '';
+$secret = trim($_ENV['RECAPTCHA_SECRET']);
+
+if (!$recaptcha) {
+    exit('Please complete the CAPTCHA.');
+}
+
+// Verify with Google
+$response = file_get_contents(
+    "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$recaptcha}"
+);
+$responseKeys = json_decode($response, true);
+
+if (empty($responseKeys['success']) || $responseKeys['success'] !== true) {
+    exit('CAPTCHA verification failed. Please try again.');
+}
+
+// ====== 2️⃣ Get and sanitize form data ======
 $fname   = htmlspecialchars(trim($_POST['fname'] ?? ''));
 $sname   = htmlspecialchars(trim($_POST['sname'] ?? ''));
 $company = htmlspecialchars(trim($_POST['company'] ?? ''));
@@ -21,17 +39,19 @@ if (!$fname || !$sname || !$pnumber || !$email || !$subject) {
     exit('Please fill in all required fields.');
 }
 
+// ====== 3️⃣ Send emails with PHPMailer ======
 $mail = new PHPMailer(true);
 
 try {
-    // First email to yourself
     $mail->isSMTP();
     $mail->Host       = trim($_ENV['SMTP_HOST']);
     $mail->SMTPAuth   = true;
-    $mail->Username   = trim($_ENV['ZOHO_EMAIL']);
-    $mail->Password   = trim($_ENV['ZOHO_PASSWORD']);
+    $mail->Username   = trim($_ENV['ICLOUD_EMAIL']);
+    $mail->Password   = trim($_ENV['ICLOUD_APP_PASSWORD']);
     $mail->SMTPSecure = trim($_ENV['SMTP_SECURE']);
     $mail->Port       = (int)$_ENV['SMTP_PORT'];
+    
+    // optional: stricter SSL verification
     $mail->SMTPOptions = [
         'ssl' => [
             'verify_peer'       => true,
@@ -40,7 +60,8 @@ try {
         ],
     ];
 
-    $mail->setFrom(trim($_ENV['ZOHO_EMAIL']), 'Portfolio Contact Form');
+    // use your alias as the visible From address
+    $mail->setFrom($_ENV['SEND_FROM_ADDRESS'], 'Oliver Walker Contact Form');
     $mail->addAddress(trim($_ENV['TO_EMAIL']));
     $mail->addReplyTo($email, "$fname $sname");
 
@@ -76,3 +97,4 @@ try {
 } catch (Exception $e) {
     echo "Mailer Error: {$mail->ErrorInfo}";
 }
+?>
