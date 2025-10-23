@@ -79,7 +79,9 @@ try {
 
     // Second email to the user (confirmation)
     $mail->clearAddresses();
-    $mail->setFrom(trim($_ENV['ZOHO_EMAIL']), 'Oliver Walker Contact Form');
+    // Second email to the user (confirmation)
+    $mail->clearAddresses();
+    $mail->setFrom(trim($_ENV['SEND_FROM_ADDRESS']), 'Oliver Walker Contact Form');
     $mail->addAddress($email);
     $mail->Subject = "Thank you for reaching out!";
     $mail->Body    = "<h3>Contact Form Submission Confirmation</h3>
