@@ -1,0 +1,176 @@
+/* vinyls.css - v3 (wrap-around carousel) */
+
+/* === Glass Container === */
+
+.glass-container {
+    position: relative;       /* lets the arrow buttons anchor to the box */
+    width: calc(100% - 10%);
+    max-width: 1200px;
+    margin: clamp(15px, 3vw, 40px) auto;
+
+    padding: clamp(20px, 4vw, 50px);
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+
+/* === Cover Stack (front + 3 covers either side) === */
+
+/* One size controls everything. Every cover inside is a percentage of it,
+   so changing --cover-size scales the whole stack. */
+.cover-stack {
+    --cover-size: clamp(80px, 18vw, 250px);
+
+    position: relative;
+    isolation: isolate;
+    width: var(--cover-size);
+    aspect-ratio: 1;
+    margin: 0 auto 30px;
+}
+
+/* Default state of EVERY cover: small, invisible and untouchable.
+   Only covers that JS gives a position class to (front, next-*, prev-*)
+   are switched on below, so an album can never appear at full size by accident. */
+.cover-stack img {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 30%;
+    aspect-ratio: 1;
+    transform: translateY(-50%);   /* vertically centred, whatever the size */
+    z-index: 1;
+
+    object-fit: cover;
+    border-radius: 3%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: left 0.5s ease, width 0.5s ease, opacity 0.5s ease;
+}
+
+/* The seven visible slots are switched on */
+.cover-stack .front,
+.cover-stack .next-one,
+.cover-stack .next-two,
+.cover-stack .next-three,
+.cover-stack .prev-one,
+.cover-stack .prev-two,
+.cover-stack .prev-three {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Clicking any cover other than the front one makes it the active album */
+.cover-stack img:not(.front) {
+    cursor: pointer;
+}
+
+/* Front cover */
+.cover-stack .front {
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Right side: further away = smaller and lower z-index */
+.cover-stack .next-one {
+    left: 65%;
+    width: 80%;
+    z-index: 4;
+}
+
+.cover-stack .next-two {
+    left: 120%;
+    width: 60%;
+    z-index: 3;
+}
+
+.cover-stack .next-three {
+    left: 160%;
+    width: 45%;
+    z-index: 2;
+}
+
+/* Left side (mirror of the right) */
+.cover-stack .prev-one {
+    left: -45%;
+    width: 80%;
+    z-index: 4;
+}
+
+.cover-stack .prev-two {
+    left: -80%;
+    width: 60%;
+    z-index: 3;
+}
+
+.cover-stack .prev-three {
+    left: -105%;
+    width: 45%;
+    z-index: 2;
+}
+
+/* Albums beyond the visible seven wait just off each end (still invisible) */
+.cover-stack .far-next {
+    left: 200%;
+    width: 30%;
+}
+
+.cover-stack .far-prev {
+    left: -130%;
+    width: 30%;
+}
+
+
+/* === Album Information === */
+
+.album-title {
+    text-align: center;
+    font-size: clamp(19px, 2.5vw, 25px);
+}
+
+.album-details {
+    text-align: center;
+    font-size: clamp(15px, 2vw, 20px);
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+
+/* === Arrow Buttons (left / right) === */
+
+/* Builds on .button-general from styles.css, just made square and pinned to the corners */
+.button-arrow {
+    position: absolute;
+    bottom: clamp(20px, 3vw, 30px);   /* keeps the offset shadow inside the box */
+
+    width: 48px;
+    padding: 0;                       /* overrides the wide padding from .button-general */
+    font-size: 22px;
+}
+
+.button-arrow-left {
+    left: clamp(20px, 3vw, 30px);
+}
+
+.button-arrow-right {
+    right: clamp(20px, 3vw, 30px);
+}
+
+/* On narrow screens, make room so the buttons sit below the text instead of over it */
+@media (max-width: 600px) {
+    .glass-container {
+        padding-bottom: 90px;
+    }
+}
