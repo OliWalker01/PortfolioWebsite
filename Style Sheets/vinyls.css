@@ -1,14 +1,16 @@
-/* vinyls.css - v4 (wrap-around carousel + Spotify player) */
+/* vinyls.css - Album carousel with Spotify player */
 
 /* === Glass Container === */
 
 .glass-container {
-    position: relative;       /* lets the arrow buttons anchor to the box */
+    position: relative;
+
     width: calc(100% - 10%);
     max-width: 1200px;
-    margin: clamp(15px, 3vw, 40px) auto;
 
-    padding: clamp(20px, 4vw, 50px);
+    margin: clamp(15px, 3vw, 40px) auto;
+    padding: clamp(15px, 2vw, 25px) clamp(20px, 4vw, 50px);
+
     box-sizing: border-box;
 
     background: rgba(255, 255, 255, 0.12);
@@ -22,42 +24,68 @@
 }
 
 
-/* === Cover Stack (front + 3 covers either side) === */
+/* === Album Title === */
 
-/* One size controls everything. Every cover inside is a percentage of it,
-   so changing --cover-size scales the whole stack. */
+.album-title {
+    text-align: center;
+    font-size: clamp(19px, 2.5vw, 25px);
+
+    margin: 0 0 clamp(15px, 2vw, 25px);
+    padding: 0;
+}
+
+
+/* === Cover Stack === */
+
+/* One size controls the overall carousel scale */
+
 .cover-stack {
     --cover-size: clamp(80px, 18vw, 250px);
 
     position: relative;
     isolation: isolate;
+
     width: var(--cover-size);
     aspect-ratio: 1;
-    margin: 0 auto 30px;
+
+    margin: 0 auto clamp(20px, 3vw, 30px);
 }
 
-/* Default state of EVERY cover: small, invisible and untouchable.
-   Only covers that JS gives a position class to (front, next-*, prev-*)
-   are switched on below, so an album can never appear at full size by accident. */
+
+/* === Individual Album Covers === */
+
+/* Default state: covers are hidden until assigned a position class */
+
 .cover-stack img {
     position: absolute;
+
     top: 50%;
     left: 35%;
+
     width: 30%;
     aspect-ratio: 1;
-    transform: translateY(-50%);   /* vertically centred, whatever the size */
+
+    transform: translateY(-50%);
     z-index: 1;
 
     object-fit: cover;
+
     border-radius: 3%;
+
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 
     opacity: 0;
     pointer-events: none;
-    transition: left 0.5s ease, width 0.5s ease, opacity 0.5s ease;
+
+    transition:
+        left 0.5s ease,
+        width 0.5s ease,
+        opacity 0.5s ease;
 }
 
-/* The seven visible slots are switched on */
+
+/* === Visible Carousel Slots === */
+
 .cover-stack .front,
 .cover-stack .next-one,
 .cover-stack .next-two,
@@ -69,19 +97,25 @@
     pointer-events: auto;
 }
 
-/* Clicking any cover other than the front one makes it the active album */
+
+/* Allow users to select another album by clicking its cover */
+
 .cover-stack img:not(.front) {
     cursor: pointer;
 }
 
-/* Front cover */
+
+/* === Active Album Cover === */
+
 .cover-stack .front {
     left: 0;
     width: 100%;
     z-index: 5;
 }
 
-/* Right side: further away = smaller and lower z-index */
+
+/* === Right-Side Album Covers === */
+
 .cover-stack .next-one {
     left: 65%;
     width: 80%;
@@ -100,7 +134,9 @@
     z-index: 2;
 }
 
-/* Left side (mirror of the right) */
+
+/* === Left-Side Album Covers === */
+
 .cover-stack .prev-one {
     left: -45%;
     width: 80%;
@@ -119,7 +155,9 @@
     z-index: 2;
 }
 
-/* Albums beyond the visible seven wait just off each end (still invisible) */
+
+/* === Covers Outside the Visible Carousel === */
+
 .cover-stack .far-next {
     left: 200%;
     width: 30%;
@@ -133,58 +171,93 @@
 
 /* === Album Information === */
 
-.album-title {
-    text-align: center;
-    font-size: clamp(19px, 2.5vw, 25px);
-}
-
 .album-details {
     text-align: center;
+
     font-size: clamp(15px, 2vw, 20px);
 
     margin-top: 5px;
     margin-bottom: 5px;
+
     padding: 0;
 }
 
 
 /* === Spotify Player === */
 
-/* Kept narrower than the box so it sits between the arrow buttons */
 .album-player {
     width: min(100%, 360px);
+
     margin: 20px auto 0;
 }
 
 .album-player iframe {
     display: block;
+
+    width: 100%;
+
     border-radius: 12px;
 }
 
 
-/* === Arrow Buttons (left / right) === */
+/* === Navigation Arrow Buttons === */
 
-/* Builds on .button-general from styles.css, just made square and pinned to the corners */
 .button-arrow {
     position: absolute;
-    bottom: clamp(20px, 3vw, 30px);   /* keeps the offset shadow inside the box */
+
+    bottom: clamp(20px, 3vw, 30px);
 
     width: 48px;
-    padding: 0;                       /* overrides the wide padding from .button-general */
+    padding: 0;
+
     font-size: 22px;
 }
+
+
+/* Previous Album Button */
 
 .button-arrow-left {
     left: clamp(20px, 3vw, 30px);
 }
 
+
+/* Next Album Button */
+
 .button-arrow-right {
     right: clamp(20px, 3vw, 30px);
 }
 
-/* On narrow screens, make room so the buttons sit below the text instead of over it */
+
+/* === Responsive Layout === */
+
 @media (max-width: 600px) {
+
     .glass-container {
-        padding-bottom: 90px;
+        padding: 15px 15px 90px;
+    }
+
+    .album-title {
+        margin-bottom: 15px;
+    }
+
+    .cover-stack {
+        margin-bottom: 20px;
+    }
+
+    .album-player {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .button-arrow {
+        bottom: 20px;
+    }
+
+    .button-arrow-left {
+        left: 20px;
+    }
+
+    .button-arrow-right {
+        right: 20px;
     }
 }
