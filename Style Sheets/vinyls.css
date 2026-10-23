@@ -1,4 +1,4 @@
-/* vinyls.css - v3 (wrap-around carousel) */
+/* vinyls.css - v4 (wrap-around carousel + Spotify player) */
 
 /* === Glass Container === */
 
@@ -145,6 +145,20 @@
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 0;
+}
+
+
+/* === Spotify Player === */
+
+/* Kept narrower than the box so it sits between the arrow buttons */
+.album-player {
+    width: min(100%, 360px);
+    margin: 20px auto 0;
+}
+
+.album-player iframe {
+    display: block;
+    border-radius: 12px;
 }
 
 
