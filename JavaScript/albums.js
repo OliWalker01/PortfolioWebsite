@@ -10,5 +10,8 @@ window.ALBUMS = [
     { title: "Favourite Worst Nightmare", artist: "Arctic Monkeys", year: 2007, genre: "Alternarive/Rock", cover: "Images/Albums/favourite_worst_nightmare_arctic_monkeys.jpg", spotify: "1XkGORuUX2QGOEIL4EbJKm" },
     { title: "Tranquility Base Hotel & Casino", artist: "Arctic Monkeys", year: 2017, genre: "Art/Psychedelic Rock", cover: "Images/Albums/tranquility_base_hotel_&_casino_arctic_monkeys.jpg", spotify: "7v6FNgLDS8KmaWA1amUtqe" },
     { title: "Live at the Royal Albert Hall", artist: "Arctic Monkeys", year: 2020, genre: "Indie Rock", cover: "Images/Albums/live_at_the_royal_albert_hall_arctic_monkeys.jpg", spotify: "7Heaa0B4KOxdWhSICTR2wE" },
-    { title: "The Car", artist: "Arctic Monkeys", year: 2022, genre: "Lounge Pop", cover: "Images/Albums/the_car_arctic_monkeys.jpg", spotify: "2GROf0WKoP5Er2M9RXVNNs" }
+    { title: "The Car", artist: "Arctic Monkeys", year: 2022, genre: "Lounge Pop", cover: "Images/Albums/the_car_arctic_monkeys.jpg", spotify: "2GROf0WKoP5Er2M9RXVNNs" },
+    { title: "W.L.", artist: "The Snuts", year: 2021, genre: "Indie Rock", cover: "Images/Albums/w.l._the_snuts.jpg", spotify: "6dakS3ouiZyccOIdrBBKcu"},
+    { title: "Burn The Empire", artist: "The Snuts", year: 2022, genre: "Indie Rock", cover: "Images/Albums/burn_the_empire_the_snuts.jpg", spotify: "4aufPz4ZGcxWHNt2lp2lTf" },
+    { title: "Millennials", artist: "The Snuts", year: 2024, genre: "Alernative/Rock", cover: "Images/Albums/millennials_the_snuts.jpg", spotify: "4WdHo1NsTm5soMAmpKfiiF" }
 ];
