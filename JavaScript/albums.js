@@ -17,5 +17,7 @@ window.ALBUMS = [
     { title: "Be Here Now", artist: "Oasis", year: 1997, genre: "Britpop/Rock", cover: "Images/Albums/be_here_now_oasis.jpg", spotify: "021D07OEcg0c4tUCilc7ah" },
     { title: "C'mon You Know", artist: "Liam Gallagher", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/cmon_you_know_liam_gallagher.jpg", spotify: "7IpAa9HvutfL3LsDsgluqY" },
     { title: "Why Me? Why Not.", artist: "Liam Gallagher", year: 2019, genre: "Alternative/Indie Rock", cover: "Images/Albums/why_me_why_not_liam_gallagher.jpg", spotify: "6iInyjotj1rYpx3vbX0MxX" },
-    { title: "Down by the River Thames (Live)", artist: "Liam Gallagher", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/down_by_the_river_thames_liam_gallagher.jpg", spotify: "s6Xwv9fGN6ytPps8OC1NSoC" }
+    { title: "Down by the River Thames (Live)", artist: "Liam Gallagher", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/down_by_the_river_thames_liam_gallagher.jpg", spotify: "s6Xwv9fGN6ytPps8OC1NSoC" },
+    { title: "See You In The Fields! - 15 Years of Kendal Calling", artist: "Kendal Calling", year: 2025, genre: "Rock, Funk / Soul, Pop, and Folk, World, & Country", cover: "Images/Albums/see_you_in_the_fields_kendal_calling.jpg", spotify: ""},
+    { title: "Hatful of Hallow", artist: "The Smiths", year: 1984, genre: "Alternative Rock", cover: "Images/Albums/hatful_of_hallow_the_smiths.jpg", spotify: "1j57Q5ntVi7crpibb0h4sv" }
 ];
