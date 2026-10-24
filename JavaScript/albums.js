@@ -13,5 +13,9 @@ window.ALBUMS = [
     { title: "The Car", artist: "Arctic Monkeys", year: 2022, genre: "Lounge Pop", cover: "Images/Albums/the_car_arctic_monkeys.jpg", spotify: "2GROf0WKoP5Er2M9RXVNNs" },
     { title: "W.L.", artist: "The Snuts", year: 2021, genre: "Indie Rock", cover: "Images/Albums/w.l._the_snuts.jpg", spotify: "6dakS3ouiZyccOIdrBBKcu"},
     { title: "Burn The Empire", artist: "The Snuts", year: 2022, genre: "Indie Rock", cover: "Images/Albums/burn_the_empire_the_snuts.jpg", spotify: "4aufPz4ZGcxWHNt2lp2lTf" },
-    { title: "Millennials", artist: "The Snuts", year: 2024, genre: "Alernative/Rock", cover: "Images/Albums/millennials_the_snuts.jpg", spotify: "4WdHo1NsTm5soMAmpKfiiF" }
+    { title: "Millennials", artist: "The Snuts", year: 2024, genre: "Alernative/Rock", cover: "Images/Albums/millennials_the_snuts.jpg", spotify: "4WdHo1NsTm5soMAmpKfiiF" },
+    { title: "Be Here Now", artist: "Oasis", year: 1997, genre: "Britpop/Rock", cover: "Images/Albums/be_here_now_oasis.jpg", spotify: "021D07OEcg0c4tUCilc7ah" },
+    { title: "C'mon You Know", artist: "Liam Gallagher", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/cmon_you_know_liam_gallagher.jpg", spotify: "7IpAa9HvutfL3LsDsgluqY" },
+    { title: "Why Me? Why Not.", artist: "Liam Gallagher", year: 2019, genre: "Alternative/Indie Rock", cover: "Images/Albums/why_me_why_not_liam_gallagher.jpg", spotify: "6iInyjotj1rYpx3vbX0MxX" },
+    { title: "Down by the River Thames (Live)", artist: "Liam Gallagher", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/down_by_the_river_thames_liam_gallagher.jpg", spotify: "s6Xwv9fGN6ytPps8OC1NSoC" }
 ];
