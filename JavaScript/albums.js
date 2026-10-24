@@ -19,5 +19,7 @@ window.ALBUMS = [
     { title: "Why Me? Why Not.", artist: "Liam Gallagher", year: 2019, genre: "Alternative/Indie Rock", cover: "Images/Albums/why_me_why_not_liam_gallagher.jpg", spotify: "6iInyjotj1rYpx3vbX0MxX" },
     { title: "Down by the River Thames (Live)", artist: "Liam Gallagher", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/down_by_the_river_thames_liam_gallagher.jpg", spotify: "s6Xwv9fGN6ytPps8OC1NSoC" },
     { title: "See You In The Fields! - 15 Years of Kendal Calling", artist: "Kendal Calling", year: 2025, genre: "Rock, Funk / Soul, Pop, and Folk, World, & Country", cover: "Images/Albums/see_you_in_the_fields_kendal_calling.jpg", spotify: ""},
-    { title: "Hatful of Hallow", artist: "The Smiths", year: 1984, genre: "Alternative Rock", cover: "Images/Albums/hatful_of_hallow_the_smiths.jpg", spotify: "1j57Q5ntVi7crpibb0h4sv" }
+    { title: "Hatful of Hallow", artist: "The Smiths", year: 1984, genre: "Alternative Rock", cover: "Images/Albums/hatful_of_hallow_the_smiths.jpg", spotify: "1j57Q5ntVi7crpibb0h4sv" },
+    { title: "St. Jude", artist: "The Courteeners", year: 2008, genre: "Alternative/Indie", cover: "Images/Albums/st_jude_the_courteeners.jpg", spotify: "3fKNYg9Ti0jyxtYBTtlRL4" },
+    { title: "More. Again. Forever.", artist: "The Courteeners", year: 2020, genre: "Alternative/Indie", cover: "Images/Albums/more_again_forever_the_courteeners.jpg", spotify: "2EfZP4H07gEN030KRk463l" }
 ];
