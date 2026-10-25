@@ -44,5 +44,7 @@ window.ALBUMS = [
     { title: "How Many Dreams?", artist: "DMA's", year: 2023, genre: "Indie Rock", cover: "Images/Albums/how_many_dreams_dmas.jpg", spotify: "2wYPALt15aZ22mny0PZvqc" },
     { title: "Lighting Matches", artist: "Tom Grennan", year: 2018, genre: "Indie Pop", cover: "Images/Albums/lighting_matches_tom_grennan.jpg", spotify: "3NBXFA91U38BuJt3SlMwlI" },
     { title: "Evering Road", artist: "Tom Grennan", year: 2021, genre: "Indie Pop", cover: "Images/Albums/evering_road_tom_grennan.jpg", spotify: "19ftohYqQetn7BoGQXXlSd" },
-    { title: "Fix Yourself, Not The World", artist: "The Wombats", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/fix_yourself_not_the_world_the_wombats.jpg", spotify: "2PZIytLiCWDHEjAXuwkVKz" }
+    { title: "Fix Yourself, Not The World", artist: "The Wombats", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/fix_yourself_not_the_world_the_wombats.jpg", spotify: "2PZIytLiCWDHEjAXuwkVKz" },
+    { title: "Bastille VS. Other People's Heartache Pt. III", artist: "Bastile", year: 2021, genre: "Indie Rock", cover: "Images/Albums/bastille_vs_other_peoples_heartache_pt_iii_bastille.jpg", spotify: "1YXsPGQingGkJZLA8uuQNL" },
+    { title: "False Alarm", artist: "Two Door Cinema Club", year: 2019, genre: "Indie Pop", cover:"Images/Albums/false_alarm_two_door_cinema_club.jpg", spotify: "4XgX7TI2RY3vzjKhKJrkGq" }
 ];
