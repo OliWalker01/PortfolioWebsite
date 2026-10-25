@@ -32,6 +32,7 @@ window.ALBUMS = [
     // Fontaines D.C.
     { title: "Skinty Fia", artist: "Fontaines D.C.", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/skinty_fia_fontaines_dc.jpg", spotify: "0aVN6rMKthfuAdDXn8RTXf" },
     { title: "Romance", artist: "Fontaines D.C.", year: 2024, genre: "Alternative/Indie", cover: "Images/Albums/romance_fontaines_dc.jpg", spotify: "287QQ922OsJYh8aFNGdJG5" },
+    { title: "Dopamine Chamber", artist: "Fontaines D.C.", year: 2026, genre: "Alternative/Indie", cover: "Images/Albums/dopamine_chamber_fontaines_dc.jpg", spotify: "0JICUfSKOdGqzE9FJSrNci" },   
 
     // Inhaler
     { title: "It Won't Always Be Like This", artist: "Inhaler", year: 2021, genre: "Alternative/Indie", cover: "Images/Albums/it_wont_always_be_like_this_inhaler.jpg", spotify: "54NhZZmsHYbKtTjarvGPwu" },
