@@ -37,5 +37,6 @@ window.ALBUMS = [
     { title: "Give Me The Future", artist: "Bastille", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/give_me_the_future_bastille.jpg", spotify: "2A3BFOsrRHn0VQuafW2zYs" },
     { title: "Other People's Heartache Pt. 4", artist: "Bastille", year: 2019, genre: "Electro/Indie Pop", cover: "Images/Albums/other_peoples_heartache_pt_4_bastille.jpg", spotify: "" },
     { title: "The Balcony", artist: "Catfish and the Bottlemen", year: 2014, genre: "Alternative/Indie", cover: "Images/Albums/the_balcony_catfish_and_the_bottlemen.jpg", spotify: "0C0OFASoQC57yC12vQhCwN" },
-    { title: "The Balance", artist: "Catfish and the Bottlemen", year: 2019, genre: "Alternative/Indie", cover: "Images/Albums/the_balance_catfish_and_the_bottlemen.jpg", spotify: "0eELSmJrZpzOKfdO80nJ9r" }
+    { title: "The Balance", artist: "Catfish and the Bottlemen", year: 2019, genre: "Alternative/Indie", cover: "Images/Albums/the_balance_catfish_and_the_bottlemen.jpg", spotify: "0eELSmJrZpzOKfdO80nJ9r" },
+    { title: "Hot Fuss", artist: "The Killers", year: 2004, genre: "Rock", cover: "Images/Albums/hot_fuss_the_killers.jpg", spotify: "4piJq7R3gjUOxnYs6lDCTg"}
 ];
