@@ -50,5 +50,6 @@ window.ALBUMS = [
     { title: "Californication", artist: "Red Hot Chilli Peppers", year: 1999, genre: "Rock", cover: "Images/Albums/californication_red_hot_chilli_peppers.jpg", spotify: "2Y9IRtehByVkegoD7TcLfi" },
     { title: "The Stone Roses", artist: "The Stone Roses", year: 1989, genre: "Indie Rock", cover: "Images/Albums/the_stone_roses_the_stone_roses.jpg", spotify: "0um9FI6BLBldL5POP4D4Cw" },
     { title: "How Beautiful Life Can Be", artist: "The Lathums", year: 2021, genre: "Alternative/Indie", cover: "Images/Albums/how_beautiful_life_can_be_the_lathums.jpg", spotify: "2r8yXie5ySfYgRuxmceSmf" },
-    { title: "Ballad Of A Bystander", artist: "The Reytons", year: 2024, genre: "Alternative/Indie", cover: "Images/Albums/ballad_of_a_bystander_the_reytons.jpg", spotify: "3tbVVoG2U5m4IAnJTF3YyZ" }
+    { title: "Ballad Of A Bystander", artist: "The Reytons", year: 2024, genre: "Alternative/Indie", cover: "Images/Albums/ballad_of_a_bystander_the_reytons.jpg", spotify: "3tbVVoG2U5m4IAnJTF3YyZ" },
+    { title: "Songs from Cars", artist: "Disney Pixar", year: 2021, genre: "Rock, Blues, Folk, Country, and Rhythm & Blues", cover: "Images/Albums/songs_from_cars_disney_pixar.jpg", spotify: "3Xiz5kq12VOzTw9Kun7m0f" }
 ];
