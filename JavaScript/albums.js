@@ -35,5 +35,7 @@ window.ALBUMS = [
     { title: "Wild World", artist: "Bastille",  year: 2016, genre: "Alternative/Indie Rock", cover: "Images/Albums/wild_world_bastille.jpg", spotify: "5NfeW0DqFVT3Su3kHBgTf4"},
     { title: "Doom Days", artist: "Bastille", year: 2019, genre: "Rock", cover: "Images/Albums/doom_days_bastille.jpg", spotify: "2QzbL1DICo4xZnWr8Sw4fF" },
     { title: "Give Me The Future", artist: "Bastille", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/give_me_the_future_bastille.jpg", spotify: "2A3BFOsrRHn0VQuafW2zYs" },
-    { title: "Other People's Heartache Pt. 4", artist: "Bastille", year: 2019, genre: "Electro/Indie Pop", cover: "Images/Albums/other_peoples_heartache_pt_4_bastille.jpg", spotify: "" }
+    { title: "Other People's Heartache Pt. 4", artist: "Bastille", year: 2019, genre: "Electro/Indie Pop", cover: "Images/Albums/other_peoples_heartache_pt_4_bastille.jpg", spotify: "" },
+    { title: "The Balcony", artist: "Catfish and the Bottlemen", year: 2014, genre: "Alternative/Indie", cover: "Images/Albums/the_balcony_catfish_and_the_bottlemen.jpg", spotify: "0C0OFASoQC57yC12vQhCwN" },
+    { title: "The Balance", artist: "Catfish and the Bottlemen", year: 2019, genre: "Alternative/Indie", cover: "Images/Albums/the_balance_catfish_and_the_bottlemen.jpg", spotify: "0eELSmJrZpzOKfdO80nJ9r" }
 ];
