@@ -46,5 +46,6 @@ window.ALBUMS = [
     { title: "Evering Road", artist: "Tom Grennan", year: 2021, genre: "Indie Pop", cover: "Images/Albums/evering_road_tom_grennan.jpg", spotify: "19ftohYqQetn7BoGQXXlSd" },
     { title: "Fix Yourself, Not The World", artist: "The Wombats", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/fix_yourself_not_the_world_the_wombats.jpg", spotify: "2PZIytLiCWDHEjAXuwkVKz" },
     { title: "Bastille VS. Other People's Heartache Pt. III", artist: "Bastile", year: 2021, genre: "Indie Rock", cover: "Images/Albums/bastille_vs_other_peoples_heartache_pt_iii_bastille.jpg", spotify: "1YXsPGQingGkJZLA8uuQNL" },
-    { title: "False Alarm", artist: "Two Door Cinema Club", year: 2019, genre: "Indie Pop", cover:"Images/Albums/false_alarm_two_door_cinema_club.jpg", spotify: "4XgX7TI2RY3vzjKhKJrkGq" }
+    { title: "False Alarm", artist: "Two Door Cinema Club", year: 2019, genre: "Indie Pop", cover:"Images/Albums/false_alarm_two_door_cinema_club.jpg", spotify: "4XgX7TI2RY3vzjKhKJrkGq" },
+    { title: "Californication", artist: "Red Hot Chilli Peppers", year: 1999, genre: "Rock", cover: "Images/Albums/californication_red_hot_chilli_peppers.jpg", spotify: "2Y9IRtehByVkegoD7TcLfi"}
 ];
