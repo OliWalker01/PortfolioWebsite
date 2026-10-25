@@ -23,5 +23,7 @@ window.ALBUMS = [
     { title: "St. Jude", artist: "The Courteeners", year: 2008, genre: "Alternative/Indie", cover: "Images/Albums/st_jude_the_courteeners.jpg", spotify: "3fKNYg9Ti0jyxtYBTtlRL4" },
     { title: "More. Again. Forever.", artist: "The Courteeners", year: 2020, genre: "Alternative/Indie", cover: "Images/Albums/more_again_forever_the_courteeners.jpg", spotify: "2EfZP4H07gEN030KRk463l" },
     { title: "Skinty Fia", artist: "Fontaines D.C.", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/skinty_fia_fontaines_dc.jpg", spotify: "0aVN6rMKthfuAdDXn8RTXf" },
-    { title: "" }
+    { title: "Open Up Your Head", artist: "Sea Girls", year: 2020, genre: "Alternative/Indie", cover: "Images/Albums/open_up_your_head_sea_girls.jpg", spotify: "65YsNAuX9dJ7fVIKicT0d1" },
+    { title: "Under Exit Lights", artist: "Sea Girls", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/under_exit_lights_sea_girls.jpg", spotify: "5c4rnFo67posi6omJUtu02" },
+    { title: "Homesick", artist: "Sea Girls", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/homesick_sea_girls.jpg", spotify: "7Hf7R79DqZn3eBHk7miX1o" }
 ];
