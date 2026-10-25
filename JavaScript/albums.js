@@ -24,8 +24,10 @@ window.ALBUMS = [
     { title: "More. Again. Forever.", artist: "The Courteeners", year: 2020, genre: "Alternative/Indie", cover: "Images/Albums/more_again_forever_the_courteeners.jpg", spotify: "2EfZP4H07gEN030KRk463l" },
     { title: "Skinty Fia", artist: "Fontaines D.C.", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/skinty_fia_fontaines_dc.jpg", spotify: "0aVN6rMKthfuAdDXn8RTXf" },
     { title: "Open Up Your Head", artist: "Sea Girls", year: 2020, genre: "Alternative/Indie", cover: "Images/Albums/open_up_your_head_sea_girls.jpg", spotify: "65YsNAuX9dJ7fVIKicT0d1" },
-    { title: "Under Exit Lights", artist: "Sea Girls", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/under_exit_lights_sea_girls.jpg", spotify: "5c4rnFo67posi6omJUtu02" },
+    { title: "Under Exit Lights (EP)", artist: "Sea Girls", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/under_exit_lights_sea_girls.jpg", spotify: "5c4rnFo67posi6omJUtu02" },
     { title: "Homesick", artist: "Sea Girls", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/homesick_sea_girls.jpg", spotify: "7Hf7R79DqZn3eBHk7miX1o" },
     { title: "Yours Truly, Angry Mob", artist: "Kaiser Chiefs", year: 2007, genre: "Alternative/Indie", cover: "Images/Albums/yours_truly_angry_mob_kaiser_chiefs.jpg", spotify: "3HiASm1Qj7CFwb4VHgsiM4" },
-    { title:  "The Art of Loving", artist: "Olivia Dean", year: 2025, genre: "R&B/Soul", cover: "Images/Albums/the_art_of_loving_olivia_dean.jpg", spotify: "0l8zYqoUeBYg47Gmevq9HZ" }
+    { title: "The Art of Loving", artist: "Olivia Dean", year: 2025, genre: "R&B/Soul", cover: "Images/Albums/the_art_of_loving_olivia_dean.jpg", spotify: "0l8zYqoUeBYg47Gmevq9HZ" },
+    { title: "Dead Boys (EP)", artist: "Sam Fender", year: 2018, genre: "Alternative/Indie", cover: "Images/Albums/dead_boys_sam_fender.jpg", spotify: "35pJYaery52xdW7eQIA2uy" },
+    { title: "People Watching", artist: "Sam Fender", year: 2025 , genre: "Alternative/Indie", cover: "Images/Albums/people_watching_sam_fender.jpg", spotify: "spotify:album:6Abecbed8BYAdHy9RaVoY7" }
 ];
