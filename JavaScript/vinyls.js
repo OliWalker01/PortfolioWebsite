@@ -4,7 +4,7 @@
 
 const albums = window.ALBUMS;
 const total = albums.length;
-let activeIndex = Math.min(3, total - 1);   // index 3 = Hypersonic Missiles
+let activeIndex = Math.min(36, total - 1);   // index 3 = Hypersonic Missiles
 
 const stack = document.getElementById("cover-stack");
 const titleEl = document.getElementById("album-title");
