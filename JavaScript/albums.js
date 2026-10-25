@@ -21,5 +21,7 @@ window.ALBUMS = [
     { title: "See You In The Fields! - 15 Years of Kendal Calling", artist: "Kendal Calling", year: 2025, genre: "Rock, Funk / Soul, Pop, and Folk, World, & Country", cover: "Images/Albums/see_you_in_the_fields_kendal_calling.jpg", spotify: ""},
     { title: "Hatful of Hallow", artist: "The Smiths", year: 1984, genre: "Alternative Rock", cover: "Images/Albums/hatful_of_hallow_the_smiths.jpg", spotify: "1j57Q5ntVi7crpibb0h4sv" },
     { title: "St. Jude", artist: "The Courteeners", year: 2008, genre: "Alternative/Indie", cover: "Images/Albums/st_jude_the_courteeners.jpg", spotify: "3fKNYg9Ti0jyxtYBTtlRL4" },
-    { title: "More. Again. Forever.", artist: "The Courteeners", year: 2020, genre: "Alternative/Indie", cover: "Images/Albums/more_again_forever_the_courteeners.jpg", spotify: "2EfZP4H07gEN030KRk463l" }
+    { title: "More. Again. Forever.", artist: "The Courteeners", year: 2020, genre: "Alternative/Indie", cover: "Images/Albums/more_again_forever_the_courteeners.jpg", spotify: "2EfZP4H07gEN030KRk463l" },
+    { title: "Skinty Fia", artist: "Fontaines D.C.", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/skinty_fia_fontaines_dc.jpg", spotify: "0aVN6rMKthfuAdDXn8RTXf" },
+    { title: "" }
 ];
