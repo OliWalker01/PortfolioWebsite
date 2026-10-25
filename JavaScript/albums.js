@@ -43,5 +43,6 @@ window.ALBUMS = [
     { title: "DMA's (EP)", artist: "DMA's", year: 2014, genre: "Indie Rock", cover: "Images/Albums/dmas_dmas.jpg", spotify: "3dtHRStj0ua2lviCeqeHOV" },
     { title: "How Many Dreams?", artist: "DMA's", year: 2023, genre: "Indie Rock", cover: "Images/Albums/how_many_dreams_dmas.jpg", spotify: "2wYPALt15aZ22mny0PZvqc" },
     { title: "Lighting Matches", artist: "Tom Grennan", year: 2018, genre: "Indie Pop", cover: "Images/Albums/lighting_matches_tom_grennan.jpg", spotify: "3NBXFA91U38BuJt3SlMwlI" },
-    { title: "Evering Road", artist: "Tom Grennan", year: 2021, genre: "Indie Pop", cover: "Images/Albums/evering_road_tom_grennan.jpg", spotify: "19ftohYqQetn7BoGQXXlSd" }
+    { title: "Evering Road", artist: "Tom Grennan", year: 2021, genre: "Indie Pop", cover: "Images/Albums/evering_road_tom_grennan.jpg", spotify: "19ftohYqQetn7BoGQXXlSd" },
+    { title: "Fix Yourself, Not The World", artist: "The Wombats", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/fix_yourself_not_the_world_the_wombats.jpg", spotify: "2PZIytLiCWDHEjAXuwkVKz" }
 ];
