@@ -29,5 +29,11 @@ window.ALBUMS = [
     { title: "Yours Truly, Angry Mob", artist: "Kaiser Chiefs", year: 2007, genre: "Alternative/Indie", cover: "Images/Albums/yours_truly_angry_mob_kaiser_chiefs.jpg", spotify: "3HiASm1Qj7CFwb4VHgsiM4" },
     { title: "The Art of Loving", artist: "Olivia Dean", year: 2025, genre: "R&B/Soul", cover: "Images/Albums/the_art_of_loving_olivia_dean.jpg", spotify: "0l8zYqoUeBYg47Gmevq9HZ" },
     { title: "Dead Boys (EP)", artist: "Sam Fender", year: 2018, genre: "Alternative/Indie", cover: "Images/Albums/dead_boys_sam_fender.jpg", spotify: "35pJYaery52xdW7eQIA2uy" },
-    { title: "People Watching", artist: "Sam Fender", year: 2025 , genre: "Alternative/Indie", cover: "Images/Albums/people_watching_sam_fender.jpg", spotify: "spotify:album:6Abecbed8BYAdHy9RaVoY7" }
+    { title: "People Watching", artist: "Sam Fender", year: 2025 , genre: "Alternative/Indie", cover: "Images/Albums/people_watching_sam_fender.jpg", spotify: "spotify:album:6Abecbed8BYAdHy9RaVoY7" },
+    { title: "Bad Blood", artist: "Bastille", year: 2013, genre: "Alternative/Indie Rock", cover: "Images/Albums/bad_blood_bastille.jpg", spotify: "5G6oMu9zNW2acdV0lqzI3L" },
+    { title: "Bad Blood X", artist: "Bastille", year: 2023, genre: "Alternative/Indie Rock", cover: "Images/Albums/bad_blood_x_bastille.jpg", spotify: "4wGbIbPiP3C3LdvewkRwTc" },
+    { title: "Wild World", artist: "Bastille",  year: 2016, genre: "Alternative/Indie Rock", cover: "Images/Albums/wild_world_bastille.jpg", spotify: "5NfeW0DqFVT3Su3kHBgTf4"},
+    { title: "Doom Days", artist: "Bastille", year: 2019, genre: "Rock", cover: "Images/Albums/doom_days_bastille.jpg", spotify: "2QzbL1DICo4xZnWr8Sw4fF" },
+    { title: "Give Me The Future", artist: "Bastille", year: 2022, genre: "Alternative/Rock", cover: "Images/Albums/give_me_the_future_bastille.jpg", spotify: "2A3BFOsrRHn0VQuafW2zYs" },
+    { title: "Other People's Heartache Pt. 4", artist: "Bastille", year: 2019, genre: "Electro/Indie Pop", cover: "Images/Albums/other_peoples_heartache_pt_4_bastille.jpg", spotify: "" }
 ];
