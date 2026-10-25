@@ -38,5 +38,8 @@ window.ALBUMS = [
     { title: "Other People's Heartache Pt. 4", artist: "Bastille", year: 2019, genre: "Electro/Indie Pop", cover: "Images/Albums/other_peoples_heartache_pt_4_bastille.jpg", spotify: "" },
     { title: "The Balcony", artist: "Catfish and the Bottlemen", year: 2014, genre: "Alternative/Indie", cover: "Images/Albums/the_balcony_catfish_and_the_bottlemen.jpg", spotify: "0C0OFASoQC57yC12vQhCwN" },
     { title: "The Balance", artist: "Catfish and the Bottlemen", year: 2019, genre: "Alternative/Indie", cover: "Images/Albums/the_balance_catfish_and_the_bottlemen.jpg", spotify: "0eELSmJrZpzOKfdO80nJ9r" },
-    { title: "Hot Fuss", artist: "The Killers", year: 2004, genre: "Rock", cover: "Images/Albums/hot_fuss_the_killers.jpg", spotify: "4piJq7R3gjUOxnYs6lDCTg"}
+    { title: "Hot Fuss", artist: "The Killers", year: 2004, genre: "Rock", cover: "Images/Albums/hot_fuss_the_killers.jpg", spotify: "4piJq7R3gjUOxnYs6lDCTg" },
+    { title: "Live at Brixton", artist: "DMA's", year: 2021, genre: "Indie Rock", cover: "Images/Albums/live_at_brixton_dmas.jpg", spotify: "6KwWkNgaZN4Ba9Jc32eR6a" },
+    { title: "DMA's (EP)", artist: "DMA's", year: 2014, genre: "Indie Rock", cover: "Images/Albums/dmas_dmas.jpg", spotify: "3dtHRStj0ua2lviCeqeHOV" },
+    { title: "How Many Dreams?", artist: "DMA's", year: 2023, genre: "Indie Rock", cover: "Images/Albums/how_many_dreams_dmas.jpg", spotify: "2wYPALt15aZ22mny0PZvqc" }
 ];
