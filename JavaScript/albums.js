@@ -41,5 +41,7 @@ window.ALBUMS = [
     { title: "Hot Fuss", artist: "The Killers", year: 2004, genre: "Rock", cover: "Images/Albums/hot_fuss_the_killers.jpg", spotify: "4piJq7R3gjUOxnYs6lDCTg" },
     { title: "Live at Brixton", artist: "DMA's", year: 2021, genre: "Indie Rock", cover: "Images/Albums/live_at_brixton_dmas.jpg", spotify: "6KwWkNgaZN4Ba9Jc32eR6a" },
     { title: "DMA's (EP)", artist: "DMA's", year: 2014, genre: "Indie Rock", cover: "Images/Albums/dmas_dmas.jpg", spotify: "3dtHRStj0ua2lviCeqeHOV" },
-    { title: "How Many Dreams?", artist: "DMA's", year: 2023, genre: "Indie Rock", cover: "Images/Albums/how_many_dreams_dmas.jpg", spotify: "2wYPALt15aZ22mny0PZvqc" }
+    { title: "How Many Dreams?", artist: "DMA's", year: 2023, genre: "Indie Rock", cover: "Images/Albums/how_many_dreams_dmas.jpg", spotify: "2wYPALt15aZ22mny0PZvqc" },
+    { title: "Lighting Matches", artist: "Tom Grennan", year: 2018, genre: "Indie Pop", cover: "Images/Albums/lighting_matches_tom_grennan.jpg", spotify: "3NBXFA91U38BuJt3SlMwlI" },
+    { title: "Evering Road", artist: "Tom Grennan", year: 2021, genre: "Indie Pop", cover: "Images/Albums/evering_road_tom_grennan.jpg", spotify: "19ftohYqQetn7BoGQXXlSd" }
 ];
