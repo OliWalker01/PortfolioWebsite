@@ -27,5 +27,5 @@ window.ALBUMS = [
     { title: "Under Exit Lights", artist: "Sea Girls", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/under_exit_lights_sea_girls.jpg", spotify: "5c4rnFo67posi6omJUtu02" },
     { title: "Homesick", artist: "Sea Girls", year: 2022, genre: "Alternative/Indie", cover: "Images/Albums/homesick_sea_girls.jpg", spotify: "7Hf7R79DqZn3eBHk7miX1o" },
     { title: "Yours Truly, Angry Mob", artist: "Kaiser Chiefs", year: 2007, genre: "Alternative/Indie", cover: "Images/Albums/yours_truly_angry_mob_kaiser_chiefs.jpg", spotify: "3HiASm1Qj7CFwb4VHgsiM4" },
-    { title:   }
+    { title:  "The Art of Loving", artist: "Olivia Dean", year: 2025, genre: "R&B/Soul", cover: "Images/Albums/the_art_of_loving_olivia_dean.jpg", spotify: "0l8zYqoUeBYg47Gmevq9HZ" }
 ];
