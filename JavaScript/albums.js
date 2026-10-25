@@ -51,5 +51,8 @@ window.ALBUMS = [
     { title: "The Stone Roses", artist: "The Stone Roses", year: 1989, genre: "Indie Rock", cover: "Images/Albums/the_stone_roses_the_stone_roses.jpg", spotify: "0um9FI6BLBldL5POP4D4Cw" },
     { title: "How Beautiful Life Can Be", artist: "The Lathums", year: 2021, genre: "Alternative/Indie", cover: "Images/Albums/how_beautiful_life_can_be_the_lathums.jpg", spotify: "2r8yXie5ySfYgRuxmceSmf" },
     { title: "Ballad Of A Bystander", artist: "The Reytons", year: 2024, genre: "Alternative/Indie", cover: "Images/Albums/ballad_of_a_bystander_the_reytons.jpg", spotify: "3tbVVoG2U5m4IAnJTF3YyZ" },
-    { title: "Songs from Cars", artist: "Disney Pixar", year: 2021, genre: "Rock, Blues, Folk, Country, and Rhythm & Blues", cover: "Images/Albums/songs_from_cars_disney_pixar.jpg", spotify: "3Xiz5kq12VOzTw9Kun7m0f" }
-];
+    { title: "Songs from Cars", artist: "Disney Pixar", year: 2021, genre: "Rock, Blues, Folk, Country, and Rhythm & Blues", cover: "Images/Albums/songs_from_cars_disney_pixar.jpg", spotify: "3Xiz5kq12VOzTw9Kun7m0f" },
+    { title: "Cuts & Bruises", artist: "Inhaler", year: 2023, genre: "Alternative/Indie", cover: "Images/Albums/cuts_&_bruises_inhaler.jpg", spotify: "2qZd7lp0lLRjeFe0O9Ou6S" },
+    { title: "It Won't Always Be Like This", artist: "Inhaler", year: 2021, genre: "Alternative/Indie", cover: "Images/Albums/it_wont_always_be_like_this_inhaler.jpg", spotify: "54NhZZmsHYbKtTjarvGPwu" },
+    { title: "Open Wide", artitst: "Inhaler", year: 2024, genre: "Alternative/Indie", cover: "Images/Albums/open_wide_inhaler.jpg", spotify: "0BOPVh2yWYPZLXbHRQtib1"}
+];  
